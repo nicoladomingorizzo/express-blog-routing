@@ -12,5 +12,22 @@ Avete anche l’array dei post che vi abbiamo fornito, salvatelo da qualche part
 Bonus
 Provare a restituire la lista dei post dalla rotta index, in formato json
 Provare a restituire un singolo post dalla rotta show, sempre in formato json
-
 */
+
+//creo una costante importando express
+const express = require('express');
+
+//creo una costante in cui richiamo la funzione express
+const app = express();
+
+//creo una porta che verrà richiamata successivamente
+const port = 3030;
+
+//importo le routes posts
+const postsRouter = require('./routers/posts');
+
+//rendo possibile vedere le immagini dentro public
+app.use(express.static('public/imgs'));
+
+//aggiungo le chiamate dei posts
+app.use('/api/posts', postsRouter);
