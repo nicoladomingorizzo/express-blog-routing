@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "dotenv": "^17.0.0",
+    "express": "^5.1.0"
+  },
+  "name": "express-blog-routing",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --env-file=.env server.js",
+    "dev" : "node --env-file=.env --watch server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicoladomingorizzo/express-blog-routing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicoladomingorizzo/express-blog-routing/issues"
+  },
+  "homepage": "https://github.com/nicoladomingorizzo/express-blog-routing#readme",
+  "description": ""
+}
