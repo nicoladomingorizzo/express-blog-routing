@@ -53,9 +53,7 @@ const posts = [
 
 //creo index con get
 router.get('/', (req, res) => {
-
     res.json(posts);
-
 });
 
 //creo show con get
@@ -63,8 +61,7 @@ router.get('/:id', (req, res) => {
     // console.log(req.params.id);
     const id = parseInt(req.params.id);
     const detailPost = posts.find((element) => element.id === id);
-    console.log(typeof id);
-
+    // console.log(typeof id);
     res.json(detailPost);
     // res.send(`Richiedo il prodotto con l'id : ${id}`);
 });
