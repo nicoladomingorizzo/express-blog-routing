@@ -27,7 +27,7 @@ const port = 3030;
 const postsRouter = require('./routers/posts');
 
 //rendo possibile vedere le immagini dentro public
-app.use(express.static('public/imgs'));
+app.use(express.static('public'));
 
 //aggiungo le chiamate dei posts
 app.use('/api/posts', postsRouter);

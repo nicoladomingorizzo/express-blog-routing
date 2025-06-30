@@ -54,7 +54,6 @@ router.get('/', (req, res) => {
         },
     ];
     res.json('posts');
-    // module.exports = posts;
 });
 
 //creo show con get
@@ -87,7 +86,7 @@ router.get('/:id', (req, res) => {
 router.get('/:id', (req, res) => {
     console.log(req.params.id);
     const id = req.params.id;
-    res.send(`Calncello il prodotto con l'id : ${id}`);
+    res.send(`Cancello il prodotto con l'id : ${id}`);
 });
 
 module.exports = router;
