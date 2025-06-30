@@ -31,3 +31,13 @@ app.use(express.static('public/imgs'));
 
 //aggiungo le chiamate dei posts
 app.use('/api/posts', postsRouter);
+
+//creo Home con get
+app.get('/', (req, res) => {
+    res.send('<h1>Welcome to our Bakery</h1>');
+});
+
+//listen del server
+app.listen(port, () => {
+    console.log(`Server is listening on port http://localhost:${port}`);
+});
